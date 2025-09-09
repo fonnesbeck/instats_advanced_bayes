@@ -53,37 +53,51 @@ Here's the updated syllabus that reflects the new course content and logical pro
 ## Day 1
 
 ### Session 1: Introduction to Bayesian Computing
-- Basic Bayes concepts and probability models
-- Posterior distribution calculation
-- Prior specification
-- Bayesian updating
-- Conjugate priors
+- Bayesian modeling workflow
+  - Specify a probability model
+  - Calculate a posterior distribution
+  - Check your model
+- Prior and likelihood selection
+  - Common likelihood distributions
+  - Common prior distributions
+- Bayesian estimation
+  - One-group model: specification, prediction, and model checking
+  - Two-group comparison: prior choice
 
 ### Session 2: Building Models with PyMC and MCMC Fundamentals
-- Building models in PyMC
-- Model specification and structure
-- Likelihood functions and prior distributions
-- Introduction to MCMC methods
-- Sampling algorithms and Monte Carlo integration
-- Simple linear regression in PyMC
+- PyMC and probabilistic programming
+- PyMC core abstractions and API
+  - Model contexts, random variables, distributions, and custom distributions
+- Model building workflow
+  - Visual data exploration
+  - Non-Bayesian baseline (simple OLS)
+  - Multiple linear regression in PyMC
+  - Dimensions and coordinates; priors; deterministic and observed variables
+  - Parameter transformations; model DAG
+- MCMC fundamentals
+  - Monte Carlo integration; Metropolis-Hastings; NUTS and sampling with NUTS
+  - Visualizing MCMC behavior
+- Prediction
+  - Out-of-sample predictions and using updated values
+- From predictions to business insights
 
 ## Day 2
 
 ### Session 3: The Bayesian Workflow
-- MCMC output processing and analysis
-- Model checking with ArviZ
-- Posterior analysis and interpretation
-- Model diagnostics for hierarchical models
-- Posterior predictive checks
-- Model evaluation and comparison
-- Complete Bayesian workflow
-- Best practices for model improvement
+- COVID-19 case study
+- Build model and run prior predictive checks
+- Fit model and assess convergence
+  - Traceplots, R-hat, effective sample size, and BFMI
+- Check model fit; prediction and forecasting
+- Improve the model iteratively
+  - Logistic model variant; model comparison
 
 ### Session 4: From Linear Regression to Hierarchical Models
-- Linear regression models in PyMC
-- Generalized linear models (GLMs)
-- Introduction to grouped data structures
-- Hierarchical modeling concepts
-- Partial pooling and information sharing
-- Varying coefficients and multi-level models
-- When and why to use hierarchical approaches
+- Generalized Linear Models (GLMs)
+  - Poisson regression for count data: setup, fitting, link functions, and checks
+  - Gamma–Poisson model; interaction effect exercise
+- Hierarchical models
+  - Conventional vs multilevel approaches; partial pooling
+  - Radon example: data organization; varying-intercept model
+  - Non-centered parameterization; adding group-level predictors
+  - Correlated group effects; prediction; benefits of multilevel models
