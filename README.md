@@ -69,16 +69,7 @@ Here's the updated syllabus that reflects the new course content and logical pro
 
 ## Day 2
 
-### Session 3: From Linear Regression to Hierarchical Models
-- Linear regression models in PyMC
-- Generalized linear models (GLMs)
-- Introduction to grouped data structures
-- Hierarchical modeling concepts
-- Partial pooling and information sharing
-- Varying coefficients and multi-level models
-- When and why to use hierarchical approaches
-
-### Session 4: The Bayesian Workflow
+### Session 3: The Bayesian Workflow
 - MCMC output processing and analysis
 - Model checking with ArviZ
 - Posterior analysis and interpretation
@@ -87,3 +78,12 @@ Here's the updated syllabus that reflects the new course content and logical pro
 - Model evaluation and comparison
 - Complete Bayesian workflow
 - Best practices for model improvement
+
+### Session 4: From Linear Regression to Hierarchical Models
+- Linear regression models in PyMC
+- Generalized linear models (GLMs)
+- Introduction to grouped data structures
+- Hierarchical modeling concepts
+- Partial pooling and information sharing
+- Varying coefficients and multi-level models
+- When and why to use hierarchical approaches
